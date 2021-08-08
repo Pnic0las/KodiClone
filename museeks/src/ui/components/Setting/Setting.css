@@ -1,0 +1,45 @@
+.setting-section {
+  padding-bottom: 10px;
+}
+
+.setting-title {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-left: 6px;
+}
+
+.setting-description {
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.setting-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.setting-select,
+.setting-input {
+  display: block;
+  background-color: white;
+  border: solid 1px var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1;
+
+  &:focus {
+    outline: none;
+  }
+
+  /* background-color: var(--header-bg);
+  color: var(--text-color); */
+}
+
+.setting-error {
+  color: red;
+}

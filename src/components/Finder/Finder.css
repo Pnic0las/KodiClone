@@ -1,0 +1,135 @@
+.addFileButton {
+    font-size: 35px !important;
+    /* display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important; */
+    padding: 25px !important;
+}
+
+.addFolder {
+    margin: auto !important;
+    font-size: 120px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.addFileButton .MuiButton-label {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.addFileButton:hover {
+    box-shadow: 0 0 20px rgba(230, 230, 230, 0.2);
+}
+
+.bigMargin {
+    margin-top: 80px;
+}
+
+.addFileIcon {
+    margin: auto !important;
+    font-size: 80px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.addFileButton:hover .notOpen, .addFileButton .open {
+    display: none;
+}
+
+.addFileButton:hover .open {
+    display: inline;
+}
+
+
+.finderList-folderNameContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.finderList-folderIcon {
+    font-size: 160px !important;
+}
+
+.finderList-folderInfoContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-bottom: 32px;
+}
+
+.finderMusicButton {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.bottomButton {
+    min-width: 400px !important;
+    height: 260px;
+}
+
+.musicFinderContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.finderListItem {
+    position: relative;
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: 60px; */
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.finderListItem ul {
+    position: relative;
+    padding: 0;
+    padding-left: 12px;
+}
+
+.finderListItem ul li {
+    position: relative;
+    left: 0;
+    list-style: none;
+    margin: 16px 0;
+    border-left: 5px solid var(--primary);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.finderListItem ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.finderListItem ul li:hover::before {
+    transform: scaleX(1);
+    transition: 0.5s;
+}
+
+.finderListItem ul li:hover {
+    left: 10px
+}
+
+.finderListItem ul li span {
+    position: relative;
+    padding: 8px;
+    display: inline-block;
+    z-index: 1;
+    transition: 0.2s;
+}

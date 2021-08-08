@@ -1,0 +1,15 @@
+.external-link {
+  color: var(--main-color);
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: inline;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
